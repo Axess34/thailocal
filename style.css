@@ -163,3 +163,4 @@ input:focus,select:focus{outline:none;border-color:var(--g7);box-shadow:0 0 0 4p
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.card{transition:none}}
 .nw{white-space:nowrap}
 .step-list b .nw{display:inline}
+.card-b .tag{display:inline-block;align-self:flex-start;margin-top:4px;font-size:12px;font-weight:500;color:var(--g7);background:var(--mint2);border:1px solid var(--mint);border-radius:999px;padding:1px 8px}

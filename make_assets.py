@@ -43,8 +43,10 @@ for size,name in [(32,"favicon-32.png"),(180,"apple-touch-icon.png"),(512,"icon-
     dd.ellipse((cx-r*0.42,cy-r*0.42,cx+r*0.42,cy+r*0.42),fill="white")
     im.resize((size,size),Image.LANCZOS).save("img/"+name,optimize=True)
 
-# ---------- example draft thumbnails ----------
-for r in ['fortune-bistro','ton-koon-hotel','love-barber']:
+# ---------- example thumbnails (Ton Koon draft + two fictional example sites) ----------
+# fictional example thumbs (example-isan-lantern-kitchen / example-khaen-kram-shop) are cropped the same way from
+# 390x640@2x screenshots of https://axess34.github.io/<repo>/
+for r in ['ton-koon-hotel']:
     im=Image.open(f'/tmp/pw/{r}.png').convert('RGB')   # 780x1280 (390x640 @2x)
     im=im.crop((0,0,780,1020)).resize((480,628),Image.LANCZOS)
     im.save(f'img/draft-{r}.webp',quality=74,method=6)
