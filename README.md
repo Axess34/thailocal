@@ -31,3 +31,9 @@ If the request fails (network, Supabase paused), the form shows a WhatsApp link 
 - DNS on Cloudflare (DNS only / grey cloud): apex A 185.199.108-111.153, AAAA 2606:50c0:8000-8003::153, CNAME www -> axess34.github.io.
 - `CNAME` file in this repo = thailocal.online.
 - Client sites: CNAME <name>.thailocal.online -> axess34.github.io (DNS only) + a CNAME file with <name>.thailocal.online in that client's repo.
+
+## Draft-request flow (updated 2026-10-07)
+1. Form on https://thailocal.online/ inserts into Supabase `public.thailocal_draft_requests` (project ivleheagpnenoaevpcjv); works from the new origin (tested 2026-10-07).
+2. Research the FB page, build `<slug>-udon-draft` on GitHub Pages (later: `<name>.thailocal.online`), save notes in /workspace/thailocal-requests/<slug>/.
+3. Reply (email draft + short chat message), then set `status='done'`.
+4. Going live for a client: Cloudflare CNAME `<name>` -> axess34.github.io (DNS only) + CNAME file `<name>.thailocal.online` in the client repo, wait for the cert, enforce HTTPS. Email forwarding: Cloudflare Email Routing rule `<x>@thailocal.online` -> client's verified address.
