@@ -15,7 +15,7 @@ d.text((s(56),s(140)),"ดูเว็บไซต์",font=F("Bold",80),fill=WH
 d.text((s(52),s(232)),"ร้านคุณฟรี!",font=F("ExtraBold",100),fill=YEL)
 d.text((s(58),s(372)),"See what your website",font=F("Bold",40),fill=WHITE)
 d.text((s(58),s(420)),"could look like, free",font=F("Bold",40),fill=WHITE)
-d.text((s(58),s(492)),"ร้านค้าในภาคอีสาน · Local businesses in Isan",font=fit(d,"ร้านค้าในภาคอีสาน · Local businesses in Isan","Medium",28,640),fill=MINT)
+d.text((s(58),s(492)),"ธุรกิจท้องถิ่นทั่วไทย · Local businesses across Thailand",font=fit(d,"ธุรกิจท้องถิ่นทั่วไทย · Local businesses across Thailand","Medium",28,640),fill=MINT)
 d.text((s(58),s(538)),"No setup fee · No contract",font=F("SemiBold",28),fill=MINT)
 px,py,pw,ph=s(840),s(84),s(245),s(504)
 phone(base,px,py,pw,ph,("#F59E0B","#EA580C")); d=ImageDraw.Draw(base)

@@ -1,6 +1,6 @@
 # Thai Local – "Get your free website draft" landing page
 
-Static, bilingual (Thai first, English beneath) landing page for Thai Local, a website service for local businesses in Northeast Thailand (Isan).
+Static, bilingual (Thai first, English beneath) landing page for Thai Local, a website service for local businesses across Thailand (examples are from Udon Thani).
 
 - Live: https://thailocal.online/ (www and the old https://axess34.github.io/thailocal/ redirect here)
 - All asset paths are relative; only og:url, og:image and canonical are absolute.

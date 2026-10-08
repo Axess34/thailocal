@@ -73,7 +73,7 @@
       shop_name: val('shop_name').slice(0, 200),
       contact: val('contact').slice(0, 200),
       email: val('email') || null,
-      city: form.elements.city.value || null,
+      city: val('city').slice(0, 100) || null,
       user_agent: (navigator.userAgent || '').slice(0, 500)
     };
 
