@@ -28,8 +28,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://ivleheagpnenoaevpcjv.supabase.co" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="img/hero-phone.webp" type="image/webp">
-<link rel="stylesheet" href="style.css">
+<link rel="preload" as="image" href="img/phone-noknoi.webp?v=2" type="image/webp">
+<link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
@@ -46,10 +46,12 @@
 <main>
 <section class="hero">
   <div class="wrap hero-in">
-    <div class="hero-text">
+    <div class="hero-head">
       <p class="kicker">ธุรกิจท้องถิ่นทั่วประเทศไทย <span lang="en">· Local businesses across Thailand</span></p>
       <h1>ดูเว็บไซต์ร้านคุณ<span class="hl">ฟรี</span></h1>
       <p class="h1-en" lang="en">See what your website could look like, free</p>
+    </div>
+    <div class="hero-body">
       <p class="lead">เราทำเว็บตัวอย่างของร้านคุณให้ดูก่อน ฟรี ไม่มีข้อผูกมัด ถูกใจค่อยเปิดใช้งานจริง</p>
       <p class="lead-en" lang="en">We build a free draft of your business's website first. No obligation. Only go live if you like it.</p>
       <div class="cta-row">
@@ -58,18 +60,27 @@
           <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.6 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 0 1-1.7-.6 13.4 13.4 0 0 1-5.2-4.6c-.6-.8-1.3-2.1-1.3-3.5s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.4z"/></svg>
           WhatsApp 065 649 5277</a>
       </div>
+      <p class="offer">เว็บตัวอย่างฟรี<b>ภายใน 24 ชั่วโมง</b> · ถูกใจค่อยเปิดใช้ <b>1,250 บาท/เดือน</b><span lang="en">Free draft within 24 hours · Go live for 1,250 baht/month</span></p>
       <ul class="ticks">
         <li>ไม่มีค่าติดตั้ง <span lang="en">No setup fee</span></li>
         <li>ไม่มีสัญญา <span lang="en">No contract</span></li>
         <li>ยกเลิกได้ทุกเมื่อ <span lang="en">Cancel any time</span></li>
       </ul>
     </div>
-    <div class="hero-visual">
-      <picture>
-        <source srcset="img/hero-phone.webp" type="image/webp">
-        <img src="img/hero-phone.png" width="420" height="760" alt="ตัวอย่างเว็บไซต์ร้านบนมือถือ / Example business website on a phone" fetchpriority="high">
-      </picture>
-      <span class="badge-free">ฟรี · FREE</span>
+    <div class="hero-phones">
+      <div class="phones">
+      <a class="phone p-left" href="https://buakaew.thailocal.online/" target="_blank" rel="noopener" aria-label="ตัวอย่างเว็บร้านนวด Bua Kaew Thai Massage (ธุรกิจสมมติ) / Example massage spa website">
+        <picture><source srcset="img/phone-buakaew.webp?v=2" type="image/webp"><img src="img/phone-buakaew.jpg?v=2" width="480" height="1039" alt="ตัวอย่างเว็บร้านนวด Bua Kaew Thai Massage (ธุรกิจสมมติ) / Example massage spa website" loading="eager" decoding="async"></picture>
+      </a>
+      <a class="phone p-mid" href="https://noknoi.thailocal.online/" target="_blank" rel="noopener" aria-label="ตัวอย่างเว็บคาเฟ่ Nok Noi Coffee &amp; Bakery (ธุรกิจสมมติ) / Example café website">
+        <picture><source srcset="img/phone-noknoi.webp?v=2" type="image/webp"><img src="img/phone-noknoi.jpg?v=2" width="480" height="1039" alt="ตัวอย่างเว็บคาเฟ่ Nok Noi Coffee &amp; Bakery (ธุรกิจสมมติ) / Example café website" fetchpriority="high"></picture>
+      </a>
+      <a class="phone p-right" href="https://tidepalm.thailocal.online/" target="_blank" rel="noopener" aria-label="ตัวอย่างเว็บบีชบาร์ Tide &amp; Palm (ธุรกิจสมมติ) / Example beach bar website">
+        <picture><source srcset="img/phone-tidepalm.webp?v=2" type="image/webp"><img src="img/phone-tidepalm.jpg?v=2" width="480" height="1039" alt="ตัวอย่างเว็บบีชบาร์ Tide &amp; Palm (ธุรกิจสมมติ) / Example beach bar website" loading="eager" decoding="async"></picture>
+      </a>
+        <span class="badge-free">ฟรี · FREE</span>
+      </div>
+      <p class="phones-cap">ตัวอย่างเว็บไซต์ (ธุรกิจสมมติ) แตะเพื่อดู <span lang="en">Example sites (fictional businesses) · tap to view</span></p>
     </div>
   </div>
 </section>
@@ -89,15 +100,15 @@
 <section class="examples" id="examples">
   <div class="wrap">
     <h2>ตัวอย่างเว็บไซต์ <span class="en" lang="en">Example websites</span></h2>
-    <p class="sub">ตัวอย่างดีไซน์สำหรับธุรกิจในอุดรธานี แตะเพื่อดู <span lang="en">Example designs for businesses in Udon Thani. Tap to open.</span></p>
+    <p class="sub">ตัวอย่างดีไซน์ (ธุรกิจสมมติ) แตะเพื่อดู <span lang="en">Example designs for fictional businesses. Tap to open.</span></p>
     <div class="cards">
       <a class="card" href="https://axess34.github.io/example-isan-lantern-kitchen/" target="_blank" rel="noopener">
         <picture><source srcset="img/example-isan-lantern-kitchen.webp" type="image/webp"><img src="img/example-isan-lantern-kitchen.jpg" width="480" height="628" loading="lazy" alt="Isan Lantern Kitchen example restaurant website"></picture>
         <div class="card-b"><b>ครัวโคมอีสาน <i lang="en">Isan Lantern Kitchen</i></b><span>ร้านอาหารอีสาน <i lang="en">Restaurant</i></span><small class="tag">ธุรกิจสมมติ · Fictional example</small><em>ดูตัวอย่าง <span lang="en">View example</span> →</em></div>
       </a>
-      <a class="card" href="https://axess34.github.io/ton-koon-hotel-udon-draft/" target="_blank" rel="noopener">
-        <picture><source srcset="img/draft-ton-koon-hotel.webp" type="image/webp"><img src="img/draft-ton-koon-hotel.jpg" width="480" height="628" loading="lazy" alt="Ton Koon Hotel draft website"></picture>
-        <div class="card-b"><b>โรงแรมต้นคูน <i lang="en">Ton Koon Hotel</i></b><span>โรงแรม <i lang="en">Hotel</i></span><em>ดูตัวอย่าง <span lang="en">View example</span> →</em></div>
+      <a class="card" href="https://tidepalm.thailocal.online/" target="_blank" rel="noopener">
+        <picture><source srcset="img/example-tidepalm.webp" type="image/webp"><img src="img/example-tidepalm.jpg" width="480" height="628" loading="lazy" alt="Tide &amp; Palm example beach bar website"></picture>
+        <div class="card-b"><b>ไทด์แอนด์ปาล์ม <i lang="en">Tide &amp; Palm</i></b><span>บีชบาร์ เกาะลันตา <i lang="en">Beach bar</i></span><small class="tag">ธุรกิจสมมติ · Fictional example</small><em>ดูตัวอย่าง <span lang="en">View example</span> →</em></div>
       </a>
       <a class="card" href="https://axess34.github.io/example-khaen-kram-shop/" target="_blank" rel="noopener">
         <picture><source srcset="img/example-khaen-kram-shop.webp" type="image/webp"><img src="img/example-khaen-kram-shop.jpg" width="480" height="628" loading="lazy" alt="Khaen &amp; Kram example shop website"></picture>
@@ -224,6 +235,6 @@
   <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.6 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 0 1-1.7-.6 13.4 13.4 0 0 1-5.2-4.6c-.6-.8-1.3-2.1-1.3-3.5s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.4z"/></svg>
 </a>
 
-<script src="app.js" defer></script>
+<script src="app.js?v=2" defer></script>
 </body>
 </html>

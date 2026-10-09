@@ -37,3 +37,11 @@ If the request fails (network, Supabase paused), the form shows a WhatsApp link 
 2. Research the FB page, build `<slug>-udon-draft` on GitHub Pages (later: `<name>.thailocal.online`), save notes in /workspace/thailocal-requests/<slug>/.
 3. Reply (email draft + short chat message), then set `status='done'`.
 4. Going live for a client: Cloudflare CNAME `<name>` -> axess34.github.io (DNS only) + CNAME file `<name>.thailocal.online` in the client repo, wait for the cert, enforce HTTPS. Email forwarding: Cloudflare Email Routing rule `<x>@thailocal.online` -> client's verified address.
+
+## Hero example phones (2026-10-09)
+The hero shows three phones linking to FICTIONAL example sites (never drafts of real businesses on this public page):
+- https://buakaew.thailocal.online/ (massage & spa, Hua Hin), repo Axess34/th-example-buakaew
+- https://noknoi.thailocal.online/ (café, Chiang Mai, centre phone), repo Axess34/th-example-noknoi
+- https://tidepalm.thailocal.online/ (beach bar, Koh Lanta), repo Axess34/th-example-tidepalm
+Screens: `img/phone-<slug>.webp|jpg` (480x1039, from 390x844 @2x screenshots). Source and build: /workspace/thai-examples/ (build.py, shoot.py, credits.json). The photos are CC0 via Openverse; credits are in each repo's README.
+To refresh: rebuild/push the example site, then run `python3 /workspace/thai-examples/shoot.py "https://{s}.thailocal.online/" live`, re-export the phone images and bump `?v=` in index.html.
