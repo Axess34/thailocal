@@ -171,3 +171,4 @@ html,body{overflow-x:clip}
 @media (min-width:1200px){.th .hx h1{font-size:52px}}
 @media (max-width:359px){.th .hx h1{font-size:26px}}
 .fp-en{display:block;font-size:.55em;font-weight:500;color:var(--mint);margin-top:6px;letter-spacing:0}
+.fp .thanks .t-en,.fp .card-form .t-en{color:var(--mut)}
