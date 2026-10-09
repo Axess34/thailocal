@@ -1,5 +1,5 @@
 /* Thai Local – free draft request form.
-   Submissions go to Supabase table public.thailocal_draft_requests (insert-only for the public key via RLS).
+   Submissions go to Supabase table public.thailocal_draft_requests with country='TH' (insert-only for the public key via RLS).
    The publishable key below is safe to expose: anon can INSERT rows into this one table and cannot read anything. */
 (function () {
   var SUPABASE_URL = 'https://ivleheagpnenoaevpcjv.supabase.co';
@@ -74,6 +74,7 @@
       contact: val('contact').slice(0, 200),
       email: val('email') || null,
       city: val('city').slice(0, 100) || null,
+      country: 'TH',
       user_agent: (navigator.userAgent || '').slice(0, 500)
     };
 
